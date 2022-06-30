@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mainContainer {
+    padding: 10px;
+}
+
+.mainHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11vh;
+    cursor: pointer;
+    color: rgb(123, 194, 16);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mainHead h1 {
+    font-size: 1.8rem;
+}
+
+li {
+    transition: .6s;
+}
+
+li:hover {
+    transform: translateY(-10px);
+    background: white;
+    color: black;
+
+}
+
+span {
+    color: black;
+}
+
+.navlist {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 6vh;
+    border: 2px solid black;
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+button {
+    font-size: 4rem;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+    display: none;
+
+}
+
+.mainBody {
+    height: 60vh;
+    width: 100%;
+    margin-top: 15px;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mainTable {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 25px;
+}
+
+.mainTable h1 {
+    color: rgb(123, 194, 16);
+}
+
+.line {
+    background-color: red;
+    color: white;
+}
+
+.text3 {
+    height: 50vh;
+}
+
+.text3 p {
+    font-size: .92rem;
+}
+
+.images {
+    height: 24vh;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+#images2 {
+    background-image: url(./images/2.jpg);
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#images3 {
+    background-image: url(./images/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mainFoot {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 7vh;
+    padding: 10px;
+
+}
+
+div>h3 {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 990PX) {
+
+    .text3 p {
+        font-size: .72rem;
+    }
+
+    .mainFoot h3 {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .text3 p {
+        font-size: 1.3rem;
+    }
+
+    .mainBody {
+        background-position: left;
+        height: 30vh;
+    }
+
+    #images3, #images2 {
+        background-position: right;
+    }
+}
+@media screen and (max-width: 820px) {
+    .text3 p {
+        font-size: 1.2rem;
+    }
+
+    .mainBody {
+        background-position: left;
+        height: 30vh;
+    }
+
+    #images3, #images2 {
+        background-position: right;
+    }
+}
+@media screen and (max-width: 768px){
+    .text3 p {
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    button {
+        display: block;
+    }
+
+    .mainHead h1, h3 {
+        font-size: 1.3rem;
+    }
+
+    .x {
+        display: none;
+    }
+
+    .navlist {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 97%;
+        line-height: 2.5;
+        align-items: center;
+        justify-content: left;
+        display: none;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .navlist.show {
+        display: flex;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .text3 p {
+        font-size: 1.18rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .text3 p {
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 912px) {
+    .text3 p {
+        font-size: 1.35rem;
+    }
+    .mainHead {
+        height: 6vh;
+    }
+}
+@media screen and (max-width: 820px) {
+    .text3 p {
+        font-size: 1.12rem;
+    }
+   
+}
+@media screen and (max-width: 768px) {
+    .text3 p {
+        font-size: 1.05rem;
+    }
+   
+}
+@media screen and (max-width: 700PX) {
+    .mainBody {
+        margin-top: 10px;
+    }
+
+    .text3 h1 {
+        font-size: 1.3rem;
+    }
+
+    .text3 h3 {
+        font-size: 1rem;
+    }
+
+    .text3 p {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mainTable {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images {
+        height: 40vh;
+    }
+
+    .text3 p {
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .text3 p {
+        font-size: .9rem;
+    }    
+    .navlist {
+        top: 10%;
+        height: 30vh;
+        width: 100%;
+        left: 0;
+    }
+}
+@media screen and (max-width: 430px) {
+    .text1 h1 {
+        font-size: 1rem;
+    }
+
+    .text1 h3 {
+        font-size: .8rem;
+    }
+
+    .text2 h1 {
+        font-size: 1rem;
+    }
+
+    .text2 h3 {
+        font-size: .7rem;
+    }
+
+    .text3 p {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .navlist {
+        top: 6%;
+        height: 20vh;
+        width: 100%;
+        left: 0;
+    }
+
+    .text3 p {
+        font-size: .92rem;
+    }
+}
+@media screen and (max-width: 412px) {
+    .navlist {
+        top: 6%;
+        height: 20vh;
+        width: 100%;
+        left: 0;
+    }
+
+    .text3 p {
+        font-size: .92rem;
+    }
+}
+@media screen and (max-width: 393px) {
+    .navlist {
+        top: 6%;
+        height: 20vh;
+        width: 100%;
+        left: 0;
+    }
+
+    .text3 p {
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text3 p {
+        font-size: .75rem;
+    }
+
+    .navlist {
+        height: 32vh;
+        right: 0;
+        width: 100%;
+    }
+
+    #images3, #images2 {
+        background-position: right;
+    }
+}
+@media screen and (max-width: 280px) {
+    .text3 p {
+        font-size: .6rem;
+    }
+
+    .navlist {
+        height: 27vh;
+        right: 0;
+        width: 100%;
+        top: 9%;
+    }
+
+    #images3, #images2 {
+        background-position: right;
+    }
+    .text2 h1 {
+        font-size: .6rem;
+    }
+    .text2 h3 {
+        font-size: .6rem;
+    }
+    .text1 h3{
+        font-size: .6rem;
+    }
+    .text1 h1{
+        font-size: .6rem;
+    }
+}  
